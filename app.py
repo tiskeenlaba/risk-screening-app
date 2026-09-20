@@ -10,7 +10,7 @@ st.set_page_config(page_title="Explainable Text-Risk Screening", page_icon="🩺
 
 @st.cache_resource
 def load_artifact():
-    return joblib.load("models/risk_model.joblib")
+    return joblib.load("risk_model.joblib")
 
 
 art = load_artifact()
